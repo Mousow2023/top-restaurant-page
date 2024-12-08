@@ -8,12 +8,13 @@ body {
 header {
     background-color: rgba(22, 22, 22, 0.897);
     padding: 1rem 5rem;
+    display: flex;
 }
 
 header nav {
     display: flex;
     margin: 0 auto;
-    justify-content: space-around;
+    gap: 5rem;
 }
 
 nav button {
@@ -27,4 +28,25 @@ nav button {
 
 nav button:hover {
     background-color: #007bff;
+}
+
+/* DIV CONTENT STYLES */
+#content {
+    margin: 4rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 90%;
+    height: 90%;
 }
