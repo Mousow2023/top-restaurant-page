@@ -1,12 +1,8 @@
 import "./styles.css"
-import heroImage from "./hero.png"
 
-const ImageContainer = document.querySelector(".image-container");
+import initialContent from "./initial-content.js"
+const mainContainer = document.getElementById("content");
 
-const image = document.createElement("img");
-image.src = heroImage;
+initialContent(mainContainer);
 
-console.log(ImageContainer);
-ImageContainer.appendChild(image)
 
-console.log("Restaurant page");
