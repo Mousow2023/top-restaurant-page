@@ -38,6 +38,11 @@ nav button:hover {
     align-items: center;
 }
 
+/* Menu content styles */
+.menu-content {
+    flex-direction: column;
+}
+
 .text-container {
     flex: 1;
 }
