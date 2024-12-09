@@ -1,5 +1,6 @@
 import "./styles.css";
 import initialContent from "./initial-content.js";
+import contanctContent from "./contact.js";
 import menuContent from "./menu.js";
 import aboutContent from "./about.js";
 
@@ -26,3 +27,10 @@ aboutButton.addEventListener("click", function () {
     container.innerHTML = "";
     container.appendChild(aboutContent())
 });
+
+// Listen to when the contact button is clicked
+const contactButton = document.querySelector(".contact");
+contactButton.addEventListener("click", function () {
+    container.innerHTML = "";
+    container.appendChild(contanctContent())
+})
