@@ -1,8 +1,6 @@
 import heroImage from "./hero.png";
 
-const container = document.getElementById("content");
-
-export default function initialContent() {
+export default function initialContent(container) {
     // Create the div.text-container of the homepage and set the class
     const textContainer = document.createElement("div");
     textContainer.classList.add("text-container");
@@ -31,6 +29,7 @@ export default function initialContent() {
     imageContainer.appendChild(image);
 
     // Append the .text-container and the .image-container to the #content
+    container.innerHTML = "";
     container.appendChild(textContainer);
     container.appendChild(imageContainer);
 };

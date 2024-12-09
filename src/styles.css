@@ -43,6 +43,10 @@ nav button:hover {
     flex-direction: column;
 }
 
+.about {
+    text-align: center;
+}
+
 .text-container {
     flex: 1;
 }
